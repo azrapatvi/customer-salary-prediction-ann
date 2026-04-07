@@ -365,22 +365,12 @@ The app will open at `http://localhost:8501`.
 
 ## 🗂 Models Folder
 
-The `models/` folder is **not committed to Git** by default (add it to `.gitignore` if the `.keras` file is large). To reproduce:
 
 ```
 models/
 ├── model.keras               # ~500KB typical size
 ├── preprocessor.joblib       # Fitted sklearn pipeline
 └── gender_encoding.json      # {"Female": 1, "Male": 0}
-```
-
-Add this to your `.gitignore`:
-```
-models/
-regressionlogs/
-__pycache__/
-*.pyc
-.ipynb_checkpoints/
 ```
 
 ---
